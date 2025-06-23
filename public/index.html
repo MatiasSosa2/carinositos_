@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cariñositos</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Fuentes modernas -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Quicksand:wght@500;700&display=swap" rel="stylesheet" />
+  <!-- AOS Animations -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16'><text y='15' font-size='15' fill='black'>🧸</text></svg>" />
+  
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Scroll suave -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar mejorada -->
+  <nav class="navbar py-3 fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-white" href="#inicio">Cariñositos 🧸</a>
+    
+    <!-- Botón de 3 líneas siempre visible -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menú colapsado siempre -->
+    <div class="collapse navbar-collapse" id="navbarMain">
+      <ul class="navbar-nav w-100 text-center">
+        <li class="nav-item"><a class="nav-link text-white" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="productos.html">Catalogo</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="carrito.html">Carrito</a></li>
+      </ul>
+
+      <!-- Buscador -->
+      <form class="d-flex justify-content-center mt-3" onsubmit="event.preventDefault();">
+        <input id="searchInput" class="form-control me-2" type="search" placeholder="Buscar productos..." />
+        <button class="btn btn-outline-light" type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Hero Section -->
+  <section id="inicio" class="contenedor d-flex align-items-center justify-content-center">
+    <div class="text-center" data-aos="fade-up">
+      <h1 class="text-terracota display-5">Ropa para<br>los más chiquitos</h1>
+      <p class="text-terracota2 fs-5 mt-3">Calidad, comodidad y confianza para mamás y bebés</p>
+      <a href="productos.html" class="btn btn-terracota mt-4 px-4 py-2">Ver catálogo completo</a>
+    </div>
+  </section>
+
+  <!-- Beneficios -->
+  <section id="beneficios" class="py-5 text-center Beneficios">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="p-4 rounded bg-white shadow-sm h-100">
+            <div class="icon-wrapper mb-3">
+              <i class="bi bi-heart-fill"></i>
+            </div>
+            <h5 class="fw-bold">Calidad garantizada</h5>
+            <p>Ropa suave, segura y duradera para bebés y embarazadas.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="p-4 rounded bg-white shadow-sm h-100">
+            <div class="icon-wrapper mb-3">
+              <i class="bi bi-truck"></i>
+            </div>
+            <h5 class="fw-bold">Envíos rápidos</h5>
+            <p>Enviamos a todo el país en 24 a 48 horas.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="p-4 rounded bg-white shadow-sm h-100">
+            <div class="icon-wrapper mb-3">
+              <i class="bi bi-chat-dots-fill"></i>
+            </div>
+            <h5 class="fw-bold">Atención personalizada</h5>
+            <p>Consultanos por WhatsApp e Instagram para elegir con confianza.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categorías -->
+  <section id="categorias" class="py-5 bg-white text-center">
+    <div class="container">
+      <h2 class="mb-5 fw-bold" data-aos="fade-up">👕 Explorá por categoría</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-sm-6 col-md-4" data-aos="zoom-in">
+          <a href="productos.html?cat=inferiores" class="category-card card border-0 shadow-sm h-100 position-relative overflow-hidden">
+            <h5 class="category-title fw-bold text-white position-absolute top-50 start-50 translate-middle text-shadow btn-light">Inferiores</h5>
+            <img src="assets/Inferiores.png" class="img-fluid category-img">
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4" data-aos="zoom-in" data-aos-delay="150">
+          <a href="productos.html?cat=superiores" class="category-card card border-0 shadow-sm h-100 position-relative overflow-hidden">
+            <h5 class="category-title fw-bold text-white position-absolute top-50 start-50 translate-middle text-shadow">Superiores</h5>
+            <img src="assets/Superiores.png" class="img-fluid category-img">
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4" data-aos="zoom-in" data-aos-delay="300">
+          <a href="productos.html?cat=conjuntos" class="category-card card border-0 shadow-sm h-100 position-relative overflow-hidden">
+            <h5 class="category-title fw-bold text-white position-absolute top-50 start-50 translate-middle text-shadow">Conjuntos</h5>
+            <img src="assets/conjunto.png" class="img-fluid category-img">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Productos Destacados Desktop -->
+  <section id="destacados" class="premium-products-section d-none d-md-block">
+    <h2 class="premium-title">Productos Destacados</h2>
+    <div class="premium-products-grid" id="destacadosContainer"></div>
+  </section>
+
+  <!-- Productos Destacados Mobile -->
+  <section class="premium-products-section d-block d-md-none">
+    <h2 class="premium-title">Productos Destacados</h2>
+    <div id="carouselDestacados" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+      <div class="carousel-inner" id="destacadosCarouselContainer"></div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselDestacados" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselDestacados" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Banner inferior -->
+  <div class="banner-inferior">
+    <div class="banner-text">
+      📦 Envíos a todo el país • 📍 Cantilo 186, City Bell • 🛍 Hasta 30 días con bolsa y etiqueta • 💰 15% de descuento en efectivo o transferencia
+    </div>
+  </div>
+
+  <!-- WhatsApp flotante -->
+  <a href="https://wa.me/" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <img src="assets/whatsapp.png" alt="WhatsApp"/>
+  </a>
+
+
+  <!-- Footer -->
+  <footer class="text-white pt-5 pb-2">
+    <div class="container text-center text-md-start">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold">Cariñositos 🧸</h5>
+          <p>Ropa para bebés y embarazadas.<br>City Bell.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h6 class="fw-bold">Contacto</h6>
+          <p><i class="bi bi-geo-alt-fill me-2"></i> Cantilo 186, City Bell</p>
+          <p><i class="bi bi-whatsapp me-2"></i> <a class="text-white" href="https://wa.me/549XXXXXXXXXX" target="_blank">WhatsApp</a></p>
+          <p><i class="bi bi-instagram me-2"></i> <a class="text-white" href="https://www.instagram.com" target="_blank">Instagram</a></p>
+        </div>
+        <div class="col-md-4 mb-2">
+          <h6 class="fw-bold">Explorá</h6>
+          <ul class="list-unstyled">
+            <li><a class="text-white" href="#inicio">Inicio</a></li>
+            <li><a class="text-white" href="#categorias">Categorías</a></li>
+            <li><a class="text-white" href="productos.html">Productos</a></li>
+            <li><a class="text-white" href="carrito.html">Carrito</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center">
+        <small>© 2025 Cariñositos - Todos los derechos reservados</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <script src="main.js"></script>
+
+  <a href="#inicio" id="btnSubir" class="btn position-fixed bottom-0 end-0 m-4 rounded-circle shadow" style="display: none; z-index: 1050; background-color: rgb(247, 235, 235);">
+    <i class="bi bi-arrow-up"></i>
+  </a>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const btnSubir = document.getElementById("btnSubir");
+    const seccionBeneficios = document.getElementById("beneficios"); // Sección "Beneficios"
+    const seccionInicio = document.getElementById("inicio"); // Si quieres asegurarte de que el botón no aparezca al inicio
+
+    window.addEventListener("scroll", function () {
+      const scrollY = window.scrollY || window.pageYOffset;
+      const beneficiosTop = seccionBeneficios.offsetTop;
+
+      // Mostrar el botón cuando el usuario pase la sección de "Beneficios"
+      if (scrollY >= beneficiosTop - 100) {
+        btnSubir.style.display = "block"; // Mostrar el botón
+      } else if (scrollY < beneficiosTop - 100) {
+        btnSubir.style.display = "none"; // Ocultar el botón si el usuario está por encima de "Beneficios"
+      }
+    });
+  });
+</script>
+
+
+
+</body>
+</html>
+
